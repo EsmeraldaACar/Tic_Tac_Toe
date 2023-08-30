@@ -1,0 +1,31 @@
+.principalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text { 
+  font-size: 2rem;
+  color: #ddb4bc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxContainer {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ width: 40%;
+ height: auto;
+}
+
+.box {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #ddb4bc;
+  width: 80px;
+  height: 80px
+}
