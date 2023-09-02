@@ -35,8 +35,6 @@ function App() {
     if (counter > 3) {
 
       const movPlayerOne = movementsPlayers[0].sort()
-
-
       const movPlayerTwo = movementsPlayers[1].sort()
 
       movPlayerOne.reduce((accumulatorLettters, element) => {
@@ -63,8 +61,7 @@ function App() {
       let tic_tac_toe_diagonal = searchValues(movPlayerOne).every((value) => value === true)
       if(tic_tac_toe_diagonal) { setWinner('Player One') }
       
-      
-
+    
       movPlayerTwo.reduce((accumulatorLettters, element) => {
         const letter = element.charAt(0);
 
@@ -87,7 +84,7 @@ function App() {
       }, {});
 
       tic_tac_toe_diagonal = searchValues(movPlayerTwo).every((value) => value === true)
-      if(tic_tac_toe_diagonal) { setWinner('Player One') }
+      if(tic_tac_toe_diagonal) { setWinner('Player Two') }
     }
   }
 
